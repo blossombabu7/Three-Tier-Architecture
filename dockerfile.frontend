@@ -1,0 +1,4 @@
+FROM openjdk:11-jre-slim
+WORKDIR /app
+COPY src/application/target/my-frontend/app/my-frontend.jar
+CMD ["java", "-jar", "my-frontend.jar"]
